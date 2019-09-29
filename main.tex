@@ -1,0 +1,41 @@
+%\title{Overleaf Memo Template}
+% Using the texMemo package by Rob Oakes
+\documentclass[a4paper,11pt]{texMemo}
+\usepackage[english]{babel}
+\usepackage{graphicx, lipsum}
+\usepackage{hyperref}
+
+%% Edit the header section here. To include your
+%% own logo, upload a file via the files menu.
+\memoto{Professor X}
+\memofrom{Aaron Jay, Carolyn Shi}
+\memosubject{Project Proposal for Predicting Storm Casualties}
+\memodate{\today}
+
+\begin{document}
+\maketitle
+
+\section{Background}
+
+In 2012, Hurricane Sandy caused \$71 billion in damages and disrupted millions of lives, making it one of the costliest natural disasters of its time. The storm served as a wake-up call for many regions of the United States that were affected. Cities did not have adequate infrastructure to withstand such a storm; homeowners who never thought floods could reach so far inland had difficulty rebuilding their lives. Yet, while damage to crops and property is certainly unavoidable, injuries and fatalities are not. In the immediate aftermath, Sandy brought with it a recorded 147 casualties in the U.S. and even more in the Caribbean. 
+
+Using the historical storm event data collected by the National Weather Service (NWS), we hope to shed light on storm events in the future by predicting the damages that will be caused by these phenomenon. This may take the form of injuries, casualties, or deaths. This dataset contains information about storms dating back to 1950. For each storm event recorded, the data includes location, storm characteristics, and damages. We also hope to use historical accounts of the storm to learn more about the circumstances under which fatalities occurred.
+
+\section{Objectives}
+\begin{itemize}
+    \item Predict the overall damage caused (number of fatalities, injuries, damage to property) for some given characteristics of a storm event as defined by the NWS.
+    \item Identify key factors that contribute to storm fatalities.
+\end{itemize}
+
+\section{Significance}
+
+The insights obtained from this data can be used on many levels. City and regional governments can forecast damage from future storms, providing impetus for making infrastructural and economic preparations for the storm. Understanding the major factors that contribute to fatalities occur can help EMS and local authorities identify areas of risk and better prepare for the types of injuries they need to treat. 
+
+\section{Data}
+DOC/NOAA/NESDIS/NCDC National Climatic Data Center, NESDIS, NOAA, U.S. Department of Commerce
+(2019). \textit{NCDC Storm Events Database} [Data files and documentation]. 
+\\Retrieved from \href{https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00510}{https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.ncdc:C00510}
+
+
+
+\end{document}
